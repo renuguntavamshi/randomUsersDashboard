@@ -34,7 +34,7 @@ function App() {
       <Routes>
     <Route  element={<NewDashboard refreshUsers={refreshUsers}/>} > 
      <Route path="/"  element={<UsersTable displayedUsers={displayedUsers}  />} />  
-   <Route path="/asdf" element={<SpecificUser />} />
+   <Route path="/:name" element={<SpecificUser />} />
    <Route path="/info" element={<Info /> } />
    
     </Route>

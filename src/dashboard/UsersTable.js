@@ -55,7 +55,7 @@ return (
                 {index+1}
               </StyledTableCell>
               <StyledTableCell align="right"><img src={user.image} height="50px" width="50px"  alt="avatar" /></StyledTableCell>
-              <StyledTableCell align="right"><Link to="/asdf" state={user} style={{color:"black"}}>{user.username}</Link></StyledTableCell>
+              <StyledTableCell align="right"><Link to={`/${user.username}`} state={user} style={{color:"black"}}>{user.username}</Link></StyledTableCell>
               <StyledTableCell align="right">{user.email}</StyledTableCell>
              
             </StyledTableRow>
